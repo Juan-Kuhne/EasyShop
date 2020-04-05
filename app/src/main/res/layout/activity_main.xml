@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ivmercl"
+        android:layout_width="182sp"
+        android:layout_height="78sp"
+        android:layout_marginTop="55dp"
+        android:onClick="mercadoLivre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivAmericanas"
+        app:layout_constraintTop_toBottomOf="@+id/tvlogo"
+        app:srcCompat="@drawable/rmercadolivre" />
+
+    <ImageView
+        android:id="@+id/ivAmericanas"
+        android:layout_width="182sp"
+        android:layout_height="78sp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="55dp"
+        android:background="@color/colorAccent"
+        android:onClick="americanas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvlogo"
+        app:srcCompat="@drawable/ramericanas" />
+
+    <ImageView
+        android:id="@+id/imbuscape"
+        android:layout_width="182sp"
+        android:layout_height="78sp"
+        android:onClick="buscape"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAmericanas"
+        app:srcCompat="@drawable/rbuscape" />
+
+    <ImageView
+        android:id="@+id/imebay"
+        android:layout_width="182sp"
+        android:layout_height="78sp"
+        android:onClick="ebay"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imbuscape"
+        app:layout_constraintTop_toBottomOf="@+id/ivmercl"
+        app:srcCompat="@drawable/rebay" />
+
+    <ImageView
+        android:id="@+id/immagalu"
+        android:layout_width="182sp"
+        android:layout_height="78sp"
+        android:onClick="magalu"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imbuscape"
+        app:srcCompat="@drawable/rmagalu" />
+
+    <ImageView
+        android:id="@+id/ivnetshoes"
+        android:layout_width="182sp"
+        android:layout_height="78sp"
+        android:onClick="netshoes"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/immagalu"
+        app:layout_constraintTop_toBottomOf="@+id/imebay"
+        app:srcCompat="@drawable/rnetshoes" />
+
+    <ImageView
+        android:id="@+id/imsubmarino"
+        android:layout_width="182sp"
+        android:layout_height="78sp"
+        android:onClick="submarino"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/immagalu"
+        app:srcCompat="@drawable/rsubmarino" />
+
+    <ImageView
+        android:id="@+id/ivwebmotors"
+        android:layout_width="182sp"
+        android:layout_height="78sp"
+        android:onClick="webmotors"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imsubmarino"
+        app:layout_constraintTop_toBottomOf="@+id/ivnetshoes"
+        app:srcCompat="@drawable/rwebmotors" />
+
+    <ImageButton
+        android:id="@+id/ibsobre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sobre"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <TextView
+        android:id="@+id/tvlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="EasyShop"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
